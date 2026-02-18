@@ -1,6 +1,8 @@
 ---
 name: sg-property-scraper
 description: Search Singapore property rental and sale listings with flexible filters. Use when asked to search Singapore properties, find rental or sale listings, check property prices near MRT stations, or compare commute times. Supports filtering by listing type (rent/sale), property type (HDB/Condo/Landed), bedrooms, bathrooms, price range, size, TOP year, MRT station codes, distance to MRT, room type, availability, and commute time to a destination. Outputs JSON to stdout.
+metadata:
+  {"openclaw":{"requires":{"bins":["python3"]},"primaryEnv":"GOOGLE_MAPS_API_KEY"}}
 ---
 
 # Singapore Property Scraper
@@ -22,7 +24,7 @@ python3 <SKILL_DIR>/scripts/scrape.py [OPTIONS]
 
 - Python 3.8+
 - `pip install curl_cffi beautifulsoup4 lxml`
-- Optional: `GOOGLE_MAPS_API_KEY` env var for commute time calculation (Distance Matrix API)
+- Optional: `GOOGLE_MAPS_API_KEY` env var for commute time calculation (Google Routes API)
 
 ## Quick Start
 
